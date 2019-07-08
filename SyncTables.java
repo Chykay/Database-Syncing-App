@@ -6,11 +6,6 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-// the following should be noted about this application 
-// It assumes that all tables with primary keys are (auto increment) or (identity)
-// it uses local ID(localID) - Primary Key of records in the local table - and company organisation ID(Org_ID) on the online database to differenciate each record
-// It also assumes and expects that the number of columns in the local table is equal to and same as the number of columns in the online database
-
 public class SyncTables {
 	private static ArrayList<String> TablesToBeSynched = new ArrayList<String>();
 	private static ArrayList<String> FFields = new ArrayList<String>(); // ArrayList for foreign fields
